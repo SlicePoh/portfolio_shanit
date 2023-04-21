@@ -1,0 +1,85 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+.item {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.Shanti{
+    clip-path: polygon(34% 0, 68% 21%, 33% 22%, 33% 59%, 68% 59%, 68% 100%, 0 100%, 33% 82%, 0 61%, 0 20%);
+}
+
+.glow-text span{
+  transition: 0.5s;
+}
+.glow-text:hover span:nth-child(1):after{
+  content: "'";
+}
+.glow-text:hover span:nth-child(1){
+  margin-left: 10px;
+}
+.glow-text:hover span:nth-child(2){
+  margin-left: 40px;
+}
+.glow-text:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 
+               0 0 20px #fff, 
+               0 0 40px #fff, 
+               0 0 80px #fff, 
+               0 0 120px #fff, 
+               0 0 160px #fff; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.wrapper{
+  display: flex;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #ff1493;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0f172a;
+  border-left: 2px solid #ff1493;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
