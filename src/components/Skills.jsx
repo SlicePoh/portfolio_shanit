@@ -18,11 +18,10 @@ export const Skills = () => {
           Skills
         </div>
 
-        <div className={`${s.flexCenter} flex-wrap my-4`}>
+        <div className={`${s.flexCenter} w-3/4 flex-wrap my-4`}>
           <motion.div
-            className={`m-2 p-10 w-80 h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-center flex-col  `}
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
+            className={`m-2 p-10 w-80 h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-center flex-col `}
+            data-aos="zoom-out-right"
             data-aos-duration="1500"
             whileHover={{
               rotate: 10,
@@ -68,16 +67,12 @@ export const Skills = () => {
             </div>
           </motion.div>
           <motion.div
-            className={`m-2 p-10 w-80 h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-between flex-col  `}
-            data-aos="flip-up"
-            data-aos-duration="1000"
+            className={`m-2 p-10 w-80 h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-between flex-col `}
+            data-aos="zoom-out"
+            data-aos-duration="1500"
             whileHover={{
               rotate: 10,
               scale: 1.01,
-            }}
-            transition={{
-              type: "tween",
-              stiffness: 200,
             }}
           >
             <div className={`${s.flexCenter} my-6 text-4xl  font-bold`}>
@@ -108,16 +103,11 @@ export const Skills = () => {
           </motion.div>
           <motion.div
             className={`m-2 p-10 w-80 h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-center flex-col  `}
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
+            data-aos="zoom-out-left"
             data-aos-duration="1500"
             whileHover={{
               rotate: 10,
               scale: 1.01,
-            }}
-            transition={{
-              type: "tween",
-              stiffness: 200,
             }}
           >
             <div className={`${s.flexCenter} my-6 text-4xl font-bold`}>

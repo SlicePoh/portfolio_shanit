@@ -7,9 +7,6 @@
   stroke-linejoin: round;
   stroke-linecap: round;
 }
-.Shanti{
-    clip-path: polygon(34% 0, 68% 21%, 33% 22%, 33% 59%, 68% 59%, 68% 100%, 0 100%, 33% 82%, 0 61%, 0 20%);
-}
 
 .glow-text span{
   transition: 0.5s;
@@ -25,16 +22,71 @@
 }
 .glow-text:hover span{
   color: #fff;
-  text-shadow: 0 0 10px #fff, 
-               0 0 20px #fff, 
-               0 0 40px #fff, 
-               0 0 80px #fff, 
-               0 0 120px #fff, 
-               0 0 160px #fff; 
+  text-shadow: 0 0 10px #f1c1e2, 
+               0 0 20px #f1c1e2, 
+               0 0 40px #f1c1e2, 
+               0 0 80px #f1c1e2, 
+               0 0 120px #f1c1e2, 
+               0 0 160px #f1c1e2; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+.head{
+  font-family: 'Sofadi One', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+.hey{
+  font-family: 'Bad Script', cursive;
+}
+.hey span{
+  display: table-cell;
+  animation: anime 2s linear infinite;
+}
+.hey span:nth-child(1){
+  animation-delay: 0s; 
+}
+.hey span:nth-child(2){
+  animation-delay: 0.25s; 
+}
+.hey span:nth-child(3){
+  animation-delay: 0.5s; 
+}
+.hey span:nth-child(4){
+  animation-delay: 0.75s; 
+}
+.hey span:nth-child(5){
+  animation-delay: 1s; 
+}
+.hey span:nth-child(6){
+  animation-delay: 1.25s; 
+}
+.hey span:nth-child(7){
+  animation-delay: 1.5s; 
+}
+.hey span:nth-child(8){
+  animation-delay: 1.75s; 
+}
+@keyframes anime{
+  0%,100%{
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #ff1493,
+                0 0 20px #ff1493,
+                0 0 40px #ff1493,
+                0 0 80px #ff1493,
+                0 0 120px #ff1493,
+                0 0 200px #ff1493,
+                0 0 300px #ff1493,
+                0 0 400px #ff1493;
+  }
+  5%,95%{
+    color: #0f172a;
+    filter: blur(0px);
+    text-shadow: none;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
 
 .wrapper{
   display: flex;
@@ -71,7 +123,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #0f172a;
+  background: #020617;
   border-left: 2px solid #ff1493;
   animation: typing 3s steps(10) infinite;
 }
