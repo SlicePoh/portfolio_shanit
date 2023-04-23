@@ -3,13 +3,13 @@ import s from '../style'
 import {FaSchool} from "react-icons/fa"
 import {MdSchool} from "react-icons/md"
 import {HiBuildingOffice2} from "react-icons/hi2"
-
+import { motion } from 'framer-motion'
 
 export const Education = () => {
   return (
     <div>
-        <div className={`Education ${s.flexCenter} flex-col`}>
-                <div className="my-8 text-white text-4xl font-semibold " data-aos="fade-right" data-aos-duration="500">
+        <div className={`tail ${s.flexCenter} flex-col`}>
+                <div className="head my-8 text-white text-4xl font-semibold " data-aos="fade-right" data-aos-duration="500">
                     Educational Qualification...
                 </div>
                 <div className={`${s.flexCenter} ml-32`}>
@@ -35,9 +35,16 @@ export const Education = () => {
                         West Bengal Board of Secondary Education ( 88% )
                     </div>
                     <div className="w-16 rounded-sm  h-1 mx-4 bg-cold-pink" data-aos="fade-right"></div>
-                    <div className={`w-20 h-20 mr-80 rounded-full text-lg font-bold bg-cold-pink ${s.flexCenter}`} data-aos="zoom-in" data-aos-duration="500">
+                    <motion.div 
+                        whileHover={{
+                            rotate: 360
+                        }}
+                        transition={{
+                            duration: 0.1
+                        }}
+                    className={`w-20 h-20 mr-80 rounded-full text-lg font-bold bg-cold-pink ${s.flexCenter}`} data-aos="zoom-in" data-aos-duration="500">
                         WBBSE
-                    </div>
+                    </motion.div>
                     
                 </div>
 
@@ -67,9 +74,16 @@ export const Education = () => {
                         West Bengal Council of Higher Secondary Education ( 83% )
                     </div>
                     <div className="w-16 rounded-sm  h-1 mx-4 bg-cold-pink" data-aos="fade-right"></div>
-                    <div className={`w-20 h-20 mr-80 rounded-full text-lg font-bold bg-cold-pink ${s.flexCenter}`} data-aos="zoom-in" data-aos-duration="500">
+                    <motion.div 
+                        whileHover={{
+                            rotate: 360
+                        }}
+                        transition={{
+                            duration: 0.1
+                        }}
+                    className={`w-20 h-20 mr-80 rounded-full text-lg font-bold bg-cold-pink ${s.flexCenter}`} data-aos="zoom-in" data-aos-duration="500">
                         WBCHSE
-                    </div>
+                    </motion.div>
                     
                 </div>
             
@@ -96,9 +110,16 @@ export const Education = () => {
                         9.42-(upto 5th Sem)
                     </div>
                     <div className="w-16 rounded-sm  h-1 mx-4 bg-cold-pink" data-aos="fade-right"></div>
-                    <div className={`w-20 h-20 mr-72 rounded-full text-xl font-bold bg-cold-pink ${s.flexCenter}`} data-aos="zoom-in" data-aos-duration="500">
+                    <motion.div 
+                        whileHover={{
+                            rotate: 360
+                        }}
+                        transition={{
+                            duration: 0.1
+                        }}
+                    className={`w-20 h-20 mr-72 rounded-full text-xl font-bold bg-cold-pink ${s.flexCenter}`} data-aos="zoom-in" data-aos-duration="500">
                         CGPA
-                    </div>
+                    </motion.div>
                 </div>
             </div>
     </div>

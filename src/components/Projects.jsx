@@ -12,8 +12,8 @@ import {BsArrowUpRightSquare} from 'react-icons/bs'
 export const Projects = () => {
     return (
         <div>
-            <div className={`Projects ${s.flexCenter} text-hot-pink  flex-col my-6`}>
-                <div className="my-8 text-white text-4xl font-semibold " data-aos="fade-right">Projects</div>
+            <div className={`tail ${s.flexCenter} text-hot-pink  flex-col my-6`}>
+                <div className="head my-8 text-white text-4xl font-semibold " data-aos="fade-right">Projects</div>
                 <div className={`${s.flexCenter} flex-wrap `}>
                     <motion.div
                         data-aos="flip-left"
@@ -23,8 +23,7 @@ export const Projects = () => {
                             scale: 1.1,
                         }}
                         transition={{
-                            type: "spring",
-                            stiffness: 200,
+                            duration: 0.1
                         }}
                         className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
                         <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={soft} alt="dashboard" />
@@ -33,14 +32,14 @@ export const Projects = () => {
                             A Dashboard consisting of various data pictorial data representation in forms of graphs and charts.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-40 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>ChartJS</li>
                                     <li>React</li>
+                                    <li>Framer Motion</li>
                                     <li>Javascript</li>
                                     <li>Tailwind CSS</li>
-                                    <li></li>
                                 </ul>
                             </div>
                             <div className={`${s.flexBetween} p-4 border-2 border-cold-pink rounded-lg font-bold`}>
@@ -59,8 +58,7 @@ export const Projects = () => {
                             scale: 1.1,
                         }}
                         transition={{
-                            type: "spring",
-                            stiffness: 200,
+                            duration: 0.1
                         }}
                         className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
                         <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={tech} alt="page" />
@@ -69,7 +67,7 @@ export const Projects = () => {
                             A basic front page for a tech-conference, highly reactive with mobile, laptop and other devices.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-40 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
@@ -87,15 +85,14 @@ export const Projects = () => {
                         </div>
                     </motion.div>
                     <motion.div
-                        data-aos="flip-right"
+                        data-aos="flip-left"
                         data-aos-duration="1500"
                         whileHover={{
                             color: '#ff1493',
                             scale: 1.1,
                         }}
                         transition={{
-                            type: "tween",
-                            stiffness: 200,
+                            duration: 0.1
                         }}
                         className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
                         <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={port1} alt="folio" />
@@ -104,14 +101,14 @@ export const Projects = () => {
                             An interactive portfolio with smooth animations and transitions made totally by me.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-40 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
-                                    <li>Javascript</li>
+                                    <li>Email JS</li>
                                     <li>Framer Motion</li>
                                     <li>AOS</li>
-                                    <li>Tailwind CSS</li>
+                                    <li>Toastify</li>
                                 </ul>
                             </div>
                             <div className={`${s.flexBetween} p-4 border-2 border-cold-pink rounded-lg font-bold`}>
@@ -131,8 +128,7 @@ export const Projects = () => {
                             scale: 1.1,
                         }}
                         transition={{
-                            type: "tween",
-                            stiffness: 200,
+                            duration: 0.1
                         }}
                         className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
                         <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={reg} alt="form" />
@@ -141,7 +137,7 @@ export const Projects = () => {
                             An interactive portfolio with smooth animations and transitions.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-40 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
@@ -168,8 +164,7 @@ export const Projects = () => {
                             scale: 1.1,
                         }}
                         transition={{
-                            type: "tween",
-                            stiffness: 200,
+                            duration: 0.1
                         }}
                         className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
                         <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={todo} alt="list" />
@@ -178,7 +173,7 @@ export const Projects = () => {
                             A Todo list where we can add tasks to be done , check them and remove them accordingly.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                                <div className={`${s.flexCenter} mr-40 py-20 flex-col`}>
+                                <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
                                     <span>Tech-Stacks :-</span>
                                     <ul>
                                         <li>Javascript</li>
@@ -198,15 +193,14 @@ export const Projects = () => {
                         </div>
                     </motion.div>
                     <motion.div
-                        data-aos="flip-left"
+                        data-aos="flip-right"
                         data-aos-duration="1500"
                         whileHover={{
                             color: '#ff1493',
                             scale: 1.1,
                         }}
                         transition={{
-                            type: "tween",
-                            stiffness: 200,
+                            duration: 0.1
                         }}
                         className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
                         <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={calc} alt="calculator" />
@@ -215,7 +209,7 @@ export const Projects = () => {
                             A basic calculator with normal features of mathematics.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-40 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>

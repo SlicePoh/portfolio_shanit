@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Skills } from './Skills'
 import { Projects } from './Projects'
 import { Education } from './Education'
+import { Footer } from './Footer';
 
 export const Home = () => {
     const [isAnimating,setIsAnimating]=useState(false);
@@ -17,7 +18,7 @@ export const Home = () => {
             </div>
           
             <div className={`${s.flexCenter} flex-col wrapper mb-40`}>
-                <div className="hey text-8xl " data-aos="fade-left" data-aos-duration="1000">
+                <div className="hey head text-8xl " data-aos="fade-left" data-aos-duration="1000">
                     <span>H</span>
                     <span>e</span>
                     <span>y</span>
@@ -27,7 +28,7 @@ export const Home = () => {
                     <span>.</span>
                     <span>.</span>
                 </div>
-                <div className="glow-text my-20 text-slate-600  text-[100px] font-normal tracking-wide " data-aos="fade-right" data-aos-duration="800">
+                <div className="head glow-text my-20 text-slate-600  text-[100px] font-normal tracking-wide " data-aos="fade-right" data-aos-duration="800">
                     <span>I</span>m<span>Shanit</span>
                 </div>
                 <div className={`p-10 ${s.flexCenter} flex-col`} data-aos="zoom-out-left" data-aos-duration="1000" >
@@ -45,9 +46,9 @@ export const Home = () => {
                             stiffness: 400,
                             
                         }}
-                    className={`bg-gray-400 rounded-3xl border-2 border-gray-500 w-60 z-50 `} src={mypic} alt="no"/>
+                    className={`bg-cold-pink rounded-full border-4 border-hot-pink w-80 z-50 `} src={mypic} alt="no"/>
                 </div>
-                <div className='flex'>
+                <div className='tail flex'>
                     <div className="static-txt text-[60px] font-normal text-white " data-aos="fade-up" data-aos-duration="700" >I'm a</div>
                     <ul data-aos="fade-left" data-aos-duration="700" className={`dynamic-txts`} >
                         <li><span>Student</span></li>
@@ -60,7 +61,8 @@ export const Home = () => {
           
             <Education/>
             <Skills/>
-            <Projects/>    
+            <Projects/>
+            <Footer/>
         </div>
     )
 }

@@ -4,15 +4,15 @@ import {FaReact, FaBootstrap, FaCss3Alt, FaHtml5, FaJava, FaNodeJs, FaFigma} fro
 import { MdStorage,} from "react-icons/md"
 import {BsGit, BsTools} from "react-icons/bs"
 import {TbBrandReactNative, TbBrandJavascript, TbBrandMongodb, TbSql, TbBrandVscode} from "react-icons/tb"
-import {SiTailwindcss, SiCanva, SiExpress, SiFramer, } from "react-icons/si"
+import {SiTailwindcss, SiCanva, SiExpress, SiFramer,SiDocker } from "react-icons/si"
 import {RiImageEditFill} from "react-icons/ri"
 import { motion } from "framer-motion";
 export const Skills = () => {
   return (
     <div>
-      <div className={`Skills ${s.flexCenter} text-cold-pink  flex-col my-6`}>
+      <div className={`tail ${s.flexCenter} text-cold-pink  flex-col my-6`}>
         <div
-          className="my-8 text-white text-4xl font-semibold "
+          className="head my-8 text-white text-4xl font-semibold "
           data-aos="fade-left"
         >
           Skills
@@ -122,6 +122,10 @@ export const Skills = () => {
             <div className={`${s.flexBetween}`}>
               <div>Canva</div>
               <SiCanva className="text-xl my-2" />
+            </div>
+            <div className={`${s.flexBetween}`}>
+              <div>Docker</div>
+              <SiDocker className="text-xl my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Framer Motion</div>
