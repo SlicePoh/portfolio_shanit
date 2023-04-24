@@ -10,7 +10,7 @@ export const Education = () => {
     <div>
         <div className={`tail ${s.flexCenter} flex-col text-[10px] md:text-base`}>
                 <div className="head my-8 text-white text-xl md:text-4xl lg:text-6xl font-bold " data-aos="fade-right" data-aos-duration="500">
-                    Educational Qualification...
+                    Educational Qualification
                 </div>
                 <div className={`${s.flexCenter} ml-[55px] md:ml-32`}>
                     <div className={`w-10 md:w-28 h-[30px] md:h-24 mt-24 md:mt-20 p-2 md:p-4 rounded-lg font-semibold bg-cold-pink ${s.flexCenter}`} data-aos="fade-up-right">

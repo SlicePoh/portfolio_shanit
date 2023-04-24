@@ -20,22 +20,17 @@ export const Home = () => {
             <div className={`${s.flexCenter} flex-col wrapper mb-40`}>
                 <div className="hey head text-4xl md:text-7xl lg:text-[100px]" data-aos="fade-left" data-aos-duration="1000">
                     <span>H</span>
-                    <span>e</span>
-                    <span>y</span>
-                    <span>y</span>
-                    <span>y</span>
-                    <span>.</span>
-                    <span>.</span>
-                    <span>.</span>
+                    <span>i</span>
+                    <span>i</span>
+                    <span>,</span>
                 </div>
                 <div className="head glow-text my-10 md:my-20 text-slate-600 text-4xl md:text-7xl lg:text-[100px] font-normal tracking-wide " data-aos="fade-right" data-aos-duration="800">
                     <span>I</span>m<span>Shanit</span>
                 </div>
                 <div className={`p-10 ${s.flexCenter} block md:hidden flex-col`} data-aos="zoom-out-left" data-aos-duration="1000" >
                     <motion.img
-                        initial={{x:-1000}} 
                         animate={{
-                            x: isAnimating? 80 : -80,
+                            scale: isAnimating? 1 : 1.2,
                             rotate: isAnimating ? 360 : 0,
                         }}
                         onClick={()=>{
@@ -46,7 +41,7 @@ export const Home = () => {
                             stiffness: 400,
                             
                         }}
-                    className={`bg-cold-pink rounded-full border-2 md:border-4 border-hot-pink w-28 z-50 `} src={mypic} alt="no"/>
+                    className={`bg-cold-pink rounded-full border-2 md:border-4 border-hot-pink w-36 z-50 `} src={mypic} alt="no"/>
                 </div>
                 <div className={`p-10 ${s.flexCenter} hidden md:block flex-col`} data-aos="zoom-out-left" data-aos-duration="1000" >
                     <motion.img

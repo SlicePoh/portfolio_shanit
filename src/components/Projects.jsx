@@ -33,7 +33,7 @@ export const Projects = () => {
                         </div>
                         <div className={`${s.flexBetween}`}>
                             <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
-                                <span>Tech-Stacks :-</span>
+                                <span className="font-semibold mb-2">Tech-Stacks :-</span>
                                 <ul>
                                     <li>ChartJS</li>
                                     <li>React</li>
@@ -68,7 +68,7 @@ export const Projects = () => {
                         </div>
                         <div className={`${s.flexBetween}`}>
                             <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
-                                <span>Tech-Stacks :-</span>
+                                <span className="font-semibold mb-2">Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
                                     <li>Javascript</li>
@@ -102,7 +102,7 @@ export const Projects = () => {
                         </div>
                         <div className={`${s.flexBetween}`}>
                             <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
-                                <span>Tech-Stacks :-</span>
+                                <span className="font-semibold mb-2">Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
                                     <li>Email JS</li>
@@ -138,7 +138,7 @@ export const Projects = () => {
                         </div>
                         <div className={`${s.flexBetween}`}>
                             <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
-                                <span>Tech-Stacks :-</span>
+                                <span className="font-semibold mb-2">Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
                                     <li>API</li>
@@ -174,7 +174,7 @@ export const Projects = () => {
                         </div>
                         <div className={`${s.flexBetween}`}>
                                 <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
-                                    <span>Tech-Stacks :-</span>
+                                    <span className="font-semibold mb-2">Tech-Stacks :-</span>
                                     <ul>
                                         <li>Javascript</li>
                                         <li>React</li>
@@ -210,7 +210,7 @@ export const Projects = () => {
                         </div>
                         <div className={`${s.flexBetween}`}>
                             <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
-                                <span>Tech-Stacks :-</span>
+                                <span className="font-semibold mb-2">Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
                                     <li>Tailwind CSS</li>
