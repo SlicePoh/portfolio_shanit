@@ -11,14 +11,14 @@ export const Home = () => {
     const [isAnimating,setIsAnimating]=useState(false);
 
     return (
-        <div className={` bg-slate-950 w-fit p-10 overflow-hidden`}>
+        <div className={` bg-slate-950 w-full px-6 md:p-10 overflow-hidden`}>
             
-            <div className={`head ${s.flexCenter} text-center overflow-hidden h-[800px] text-3xl md:text-8xl text-white font-extrabold`} data-aos="fade-down" data-aos-duration="1000">
+            <div className={`head ${s.flexCenter} text-center overflow-hidden h-[600px] md:h-[800px] text-3xl md:text-7xl lg:text-[100px]  text-white font-extrabold`} data-aos="fade-down" data-aos-duration="1000">
                 Scroll to read the next part
             </div>
           
             <div className={`${s.flexCenter} flex-col wrapper mb-40`}>
-                <div className="hey head text-8xl " data-aos="fade-left" data-aos-duration="1000">
+                <div className="hey head text-4xl md:text-7xl lg:text-[100px]" data-aos="fade-left" data-aos-duration="1000">
                     <span>H</span>
                     <span>e</span>
                     <span>y</span>
@@ -28,14 +28,14 @@ export const Home = () => {
                     <span>.</span>
                     <span>.</span>
                 </div>
-                <div className="head glow-text my-20 text-slate-600  text-[100px] font-normal tracking-wide " data-aos="fade-right" data-aos-duration="800">
+                <div className="head glow-text my-10 md:my-20 text-slate-600 text-4xl md:text-7xl lg:text-[100px] font-normal tracking-wide " data-aos="fade-right" data-aos-duration="800">
                     <span>I</span>m<span>Shanit</span>
                 </div>
-                <div className={`p-10 ${s.flexCenter} flex-col`} data-aos="zoom-out-left" data-aos-duration="1000" >
+                <div className={`p-10 ${s.flexCenter} block md:hidden flex-col`} data-aos="zoom-out-left" data-aos-duration="1000" >
                     <motion.img
                         initial={{x:-1000}} 
                         animate={{
-                            x: isAnimating? 250 : -250,
+                            x: isAnimating? 80 : -80,
                             rotate: isAnimating ? 360 : 0,
                         }}
                         onClick={()=>{
@@ -46,10 +46,27 @@ export const Home = () => {
                             stiffness: 400,
                             
                         }}
-                    className={`bg-cold-pink rounded-full border-4 border-hot-pink w-80 z-50 `} src={mypic} alt="no"/>
+                    className={`bg-cold-pink rounded-full border-2 md:border-4 border-hot-pink w-28 z-50 `} src={mypic} alt="no"/>
                 </div>
-                <div className='tail flex'>
-                    <div className="static-txt text-[60px] font-normal text-white " data-aos="fade-up" data-aos-duration="700" >I'm a</div>
+                <div className={`p-10 ${s.flexCenter} hidden md:block flex-col`} data-aos="zoom-out-left" data-aos-duration="1000" >
+                    <motion.img
+                        initial={{x:-1000}} 
+                        animate={{
+                            x: isAnimating? 350 : -350,
+                            rotate: isAnimating ? 360 : 0,
+                        }}
+                        onClick={()=>{
+                            setIsAnimating(!isAnimating);
+                        }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 400,
+                            
+                        }}
+                    className={`bg-cold-pink rounded-full border-2 md:border-4 border-hot-pink md:w-60 lg:w-80 z-50 `} src={mypic} alt="no"/>
+                </div>
+                <div className='tail flex text-3xl md:text-[60px]'>
+                    <div className=" font-normal text-white my-[25px]" data-aos="fade-up" data-aos-duration="700" >I'm a</div>
                     <ul data-aos="fade-left" data-aos-duration="700" className={`dynamic-txts`} >
                         <li><span>Student</span></li>
                         <li><span>Developer</span></li>

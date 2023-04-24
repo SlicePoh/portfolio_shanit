@@ -83,7 +83,7 @@
   display: flex;
 }
 .wrapper .dynamic-txts{
-  margin-left: 15px;
+  margin-left: 10px;
   height: 90px;
   line-height: 90px;
   overflow: hidden;
@@ -91,7 +91,6 @@
 .dynamic-txts li{
   list-style: none;
   color: #ff1493;
-  font-size: 60px;
   font-weight: 500;
   position: relative;
   top: 0;
@@ -105,14 +104,15 @@
 
 .dynamic-txts li span{
   position: relative;
-  margin: 5px 0;
+  margin: 10px 0;
   line-height: 90px;
 }
 .dynamic-txts li span::after{
   content: "";
   position: absolute;
   left: 0;
-  height: 100%;
+  margin: 20px 0;
+  height: 80%;
   width: 100%;
   background: #020617;
   border-left: 2px solid #ff1493;
@@ -126,7 +126,18 @@
     left: 0;
   }
 }
-
+@media (min-width: 768px) {
+  .wrapper .dynamic-txts{
+    height: 90px;
+  }
+  .dynamic-txts li span{
+    margin: 5px 0px;
+  }
+  .dynamic-txts li span::after{
+    height: 100%;
+    margin: 0;
+  }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Expletus+Sans&display=swap');
 .head{

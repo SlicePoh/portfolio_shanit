@@ -18,9 +18,9 @@ export const Skills = () => {
           Skills
         </div>
 
-        <div className={`${s.flexCenter} w-3/4 flex-wrap my-4`}>
+        <div className={`${s.flexCenter} w-5/6 flex-wrap my-4 text-sm md:text-base`}>
           <motion.div
-            className={`m-2 p-10 w-80 h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-center flex-col `}
+            className={`m-2 p-4 md:p-10 w-72 md:w-80 h-80 md:h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-center flex-col `}
             data-aos="zoom-out-right"
             data-aos-duration="1500"
             whileHover={{
@@ -32,42 +32,42 @@ export const Skills = () => {
               stiffness: 200,
             }}
           >
-            <div className={`${s.flexCenter} my-6 text-4xl font-bold`}>
-              <RiImageEditFill className="mx-4" />
+            <div className={`${s.flexCenter} my-6 text-2xl md:text-4xl font-bold`}>
+              <RiImageEditFill className="mx-2 md:mx-4" />
               <div>Frontend</div>
             </div>
 
             <div className={`${s.flexBetween}`}>
               <div>HTML5</div>
-              <FaHtml5 className="text-xl my-2" />
+              <FaHtml5 className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>CSS3</div>
-              <FaCss3Alt className="text-xl my-2" />
+              <FaCss3Alt className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Javascript</div>
-              <TbBrandJavascript className="text-xl my-2" />
+              <TbBrandJavascript className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>React js</div>
-              <FaReact className="text-xl my-2" />
+              <FaReact className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Bootstrap</div>
-              <FaBootstrap className="text-xl my-2" />
+              <FaBootstrap className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Tailwind CSS</div>
-              <SiTailwindcss className="text-xl my-2" />
+              <SiTailwindcss className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>React Native</div>
-              <TbBrandReactNative className="text-xl my-2" />
+              <TbBrandReactNative className="text-lg md:text-xl my-1 md:my-2" />
             </div>
           </motion.div>
           <motion.div
-            className={`m-2 p-10 w-80 h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-between flex-col `}
+            className={`m-2 p-4 md:p-10 w-72 md:w-80 h-80 md:h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-between flex-col `}
             data-aos="zoom-out"
             data-aos-duration="1500"
             whileHover={{
@@ -75,34 +75,34 @@ export const Skills = () => {
               scale: 1.01,
             }}
           >
-            <div className={`${s.flexCenter} my-6 text-4xl  font-bold`}>
-              <MdStorage className="mx-4" />
+            <div className={`${s.flexCenter} my-6 text-2xl md:text-4xl  font-bold`}>
+              <MdStorage className="mx-2 md:mx-4" />
               <div>Backend</div>
             </div>
 
             <div className={`${s.flexBetween}`}>
               <div>Node js</div>
-              <FaNodeJs className="text-xl my-2" />
+              <FaNodeJs className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Mongo DB</div>
-              <TbBrandMongodb className="text-xl my-2" />
+              <TbBrandMongodb className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Express js</div>
-              <SiExpress className="text-xl my-2" />
+              <SiExpress className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>SQL</div>
-              <TbSql className="text-xl my-2" />
+              <TbSql className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Java</div>
-              <FaJava className="text-xl my-2" />
+              <FaJava className="text-lg md:text-xl my-1 md:my-2" />
             </div>
           </motion.div>
           <motion.div
-            className={`m-2 p-10 w-80 h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-center flex-col  `}
+            className={`m-2 p-4 md:p-10 w-72 md:w-80 h-80 md:h-[420px] border-4 border-cold-pink hover:border-hot-pink hover:text-hot-pink rounded-xl flex justify-center flex-col  `}
             data-aos="zoom-out-left"
             data-aos-duration="1500"
             whileHover={{
@@ -111,33 +111,33 @@ export const Skills = () => {
             }}
           >
             <div className={`${s.flexCenter} my-6 text-4xl font-bold`}>
-              <BsTools className="m-4" />
+              <BsTools className="m-2 md:m-4" />
               <div>Tools</div>
             </div>
 
             <div className={`${s.flexBetween}`}>
               <div>Figma</div>
-              <FaFigma className="text-xl my-2" />
+              <FaFigma className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Canva</div>
-              <SiCanva className="text-xl my-2" />
+              <SiCanva className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Docker</div>
-              <SiDocker className="text-xl my-2" />
+              <SiDocker className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Framer Motion</div>
-              <SiFramer className="text-xl my-2" />
+              <SiFramer className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Git</div>
-              <BsGit className="text-xl my-2" />
+              <BsGit className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>VS Code</div>
-              <TbBrandVscode className="text-xl my-2" />
+              <TbBrandVscode className="text-lg md:text-xl my-1 md:my-2" />
             </div>
           </motion.div>
         </div>

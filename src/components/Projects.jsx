@@ -12,9 +12,9 @@ import {BsArrowUpRightSquare} from 'react-icons/bs'
 export const Projects = () => {
     return (
         <div>
-            <div className={`tail ${s.flexCenter} text-hot-pink  flex-col my-6`}>
+            <div className={`tail ${s.flexCenter} text-hot-pink flex-col my-6`}>
                 <div className="head my-8 text-white text-4xl font-semibold " data-aos="fade-right">Projects</div>
-                <div className={`${s.flexCenter} flex-wrap `}>
+                <div className={`${s.flexCenter} flex-wrap text-xs md:text-base `}>
                     <motion.div
                         data-aos="flip-left"
                         data-aos-duration="1500"
@@ -25,14 +25,14 @@ export const Projects = () => {
                         transition={{
                             duration: 0.1
                         }}
-                        className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
-                        <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={soft} alt="dashboard" />
-                        <div className="text-2xl font-semibold my-6">Software Dashboard</div>
-                        <div className="text-center text-lg px-10 ">
+                        className={`${s.flexCenter} flex-col text-cold-pink m-4 md:m-10 rounded-2xl w-[270px] md:w-[450px] h-[350px] md:h-[550px] border-2 border-hot-pink `}>
+                        <img className="h-32 md:h-52 rounded-2xl border-2 border-hot-pink w-[200px] md:w-[350px] " src={soft} alt="dashboard" />
+                        <div className="text-lg md:2xl font-semibold my-4 md:my-6">Software Dashboard</div>
+                        <div className="text-center md:text-lg px-10 ">
                             A Dashboard consisting of various data pictorial data representation in forms of graphs and charts.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>ChartJS</li>
@@ -44,7 +44,7 @@ export const Projects = () => {
                             </div>
                             <div className={`${s.flexBetween} p-4 border-2 border-cold-pink rounded-lg font-bold`}>
                                 <a href="https://github.com/SlicePoh/software-dashboard.git" target="_blank" rel="noreferrer">
-                                    <button className={`w-24 h-10 cursor-pointer`}>Go to git</button>
+                                    <button className={`w-10 md:w-24 h-6 md:h-10 cursor-pointer`}>Go to git</button>
                                 </a>
                                 <BsArrowUpRightSquare/>
                             </div>    
@@ -60,14 +60,14 @@ export const Projects = () => {
                         transition={{
                             duration: 0.1
                         }}
-                        className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
-                        <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={tech} alt="page" />
-                        <div className="text-2xl font-semibold my-6">Tech Conference Webpage</div>
-                        <div className="text-center text-lg px-10 ">
+                        className={`${s.flexCenter} flex-col text-cold-pink m-4 md:m-10 rounded-2xl w-[270px] md:w-[450px] h-[350px] md:h-[550px] border-2 border-hot-pink `}>
+                        <img className="h-32 md:h-52 rounded-2xl border-2 border-hot-pink w-[200px] md:w-[350px] " src={tech} alt="page" />
+                        <div className="text-lg md:2xl font-semibold my-4 md:my-6">Tech Conference Webpage</div>
+                        <div className="text-center md:text-lg px-10 ">
                             A basic front page for a tech-conference, highly reactive with mobile, laptop and other devices.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
@@ -78,7 +78,7 @@ export const Projects = () => {
                             </div>
                             <div className={`${s.flexBetween} p-4 border-2 border-cold-pink rounded-lg font-bold`}>
                                 <a href="https://tech-conferenz.netlify.app/" target="_blank" rel="noreferrer">
-                                <button className={`w-24 h-10 cursor-pointer`}>Go to site</button>
+                                    <button className={`w-10 md:w-24 h-6 md:h-10 cursor-pointer`}>Go to site</button>
                                 </a>
                                 <BsArrowUpRightSquare/>
                             </div>    
@@ -94,14 +94,14 @@ export const Projects = () => {
                         transition={{
                             duration: 0.1
                         }}
-                        className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
-                        <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={port1} alt="folio" />
-                        <div className="text-2xl font-semibold my-6">Portfolio</div>
-                        <div className="text-center text-lg px-10 ">
+                        className={`${s.flexCenter} flex-col text-cold-pink m-4 md:m-10 rounded-2xl w-[270px] md:w-[450px] h-[350px] md:h-[550px] border-2 border-hot-pink `}>
+                        <img className="h-32 md:h-52 rounded-2xl border-2 border-hot-pink w-[200px] md:w-[350px] " src={port1} alt="folio" />
+                        <div className="text-lg md:2xl font-semibold my-4 md:my-6">Portfolio</div>
+                        <div className="text-center md:text-lg px-10 ">
                             An interactive portfolio with smooth animations and transitions made totally by me.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
@@ -113,7 +113,7 @@ export const Projects = () => {
                             </div>
                             <div className={`${s.flexBetween} p-4 border-2 border-cold-pink rounded-lg font-bold`}>
                                 <a href="https://github.com/SlicePoh/portfolio_shanit.git" target="_blank" rel="noreferrer">
-                                <button className={`w-24 h-10 cursor-pointer`}>Go to git</button>
+                                <button className={`w-10 md:w-24 h-6 md:h-10 cursor-pointer`}>Go to git</button>
                                 </a>
                                 <BsArrowUpRightSquare/>
                             </div>
@@ -130,14 +130,14 @@ export const Projects = () => {
                         transition={{
                             duration: 0.1
                         }}
-                        className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
-                        <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={reg} alt="form" />
-                        <div className="text-2xl font-semibold my-6">Student Registration Form</div>
-                        <div className="text-center text-lg px-10 ">
+                        className={`${s.flexCenter} flex-col text-cold-pink m-4 md:m-10 rounded-2xl w-[270px] md:w-[450px] h-[350px] md:h-[550px] border-2 border-hot-pink `}>
+                        <img className="h-32 md:h-52 rounded-2xl border-2 border-hot-pink w-[200px] md:w-[350px] " src={reg} alt="form" />
+                        <div className="text-lg md:2xl font-semibold my-4 md:my-6">Student Registration Form</div>
+                        <div className="text-center md:text-lg px-10 ">
                             An interactive portfolio with smooth animations and transitions.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
@@ -149,7 +149,7 @@ export const Projects = () => {
                             </div>
                             <div className={`${s.flexBetween} p-4 border-2 border-cold-pink rounded-lg font-bold`}>
                                 <a href="https://student-reg.netlify.app/" target="_blank" rel="noreferrer">
-                                <button className={`w-24 h-10 cursor-pointer`}>Go to site</button>
+                                <button className={`w-10 md:w-24 h-6 md:h-10 cursor-pointer`}>Go to site</button>
                                 </a>
                                 <BsArrowUpRightSquare/>
                             </div>
@@ -166,14 +166,14 @@ export const Projects = () => {
                         transition={{
                             duration: 0.1
                         }}
-                        className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
-                        <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={todo} alt="list" />
-                        <div className="text-2xl font-semibold my-6">To-Do List</div>
-                        <div className="text-center text-lg px-10 ">
+                        className={`${s.flexCenter} flex-col text-cold-pink m-4 md:m-10 rounded-2xl w-[270px] md:w-[450px] h-[350px] md:h-[550px] border-2 border-hot-pink `}>
+                        <img className="h-32 md:h-52 rounded-2xl border-2 border-hot-pink w-[200px] md:w-[350px] " src={todo} alt="list" />
+                        <div className="text-lg md:2xl font-semibold my-4 md:my-6">To-Do List</div>
+                        <div className="text-center md:text-lg px-10 ">
                             A Todo list where we can add tasks to be done , check them and remove them accordingly.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                                <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
+                                <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
                                     <span>Tech-Stacks :-</span>
                                     <ul>
                                         <li>Javascript</li>
@@ -185,7 +185,7 @@ export const Projects = () => {
                                 </div>
                             <div className={`${s.flexBetween} p-4 border-2 border-cold-pink rounded-lg font-bold`}>
                                 <a href="https://taskmemo.netlify.app/" target="_blank" rel="noreferrer">
-                                <button className={`w-24 h-10 cursor-pointer`}>Go to site</button>
+                                <button className={`w-10 md:w-24 h-6 md:h-10 cursor-pointer`}>Go to site</button>
                                 </a>
                                 <BsArrowUpRightSquare/>
                             </div>
@@ -202,14 +202,14 @@ export const Projects = () => {
                         transition={{
                             duration: 0.1
                         }}
-                        className={`${s.flexCenter} flex-col text-cold-pink m-10 rounded-2xl w-[450px] h-[550px] border-2 border-hot-pink `}>
-                        <img className="h-52 rounded-2xl border-2 border-hot-pink w-[350px] " src={calc} alt="calculator" />
-                        <div className="text-2xl font-semibold my-6">Calculator</div>
-                        <div className="text-center text-lg px-10 ">
+                        className={`${s.flexCenter} flex-col text-cold-pink m-4 md:m-10 rounded-2xl w-[270px] md:w-[450px] h-[350px] md:h-[550px] border-2 border-hot-pink `}>
+                        <img className="h-32 md:h-52 rounded-2xl border-2 border-hot-pink w-[200px] md:w-[350px] " src={calc} alt="calculator" />
+                        <div className="text-lg md:2xl font-semibold my-4 md:my-6">Calculator</div>
+                        <div className="text-center md:text-lg px-10 ">
                             A basic calculator with normal features of mathematics.
                         </div>
                         <div className={`${s.flexBetween}`}>
-                            <div className={`${s.flexCenter} mr-28 py-20 flex-col`}>
+                            <div className={`${s.flexCenter} mr-16 md:mr-28 py-10 md:py-20 flex-col`}>
                                 <span>Tech-Stacks :-</span>
                                 <ul>
                                     <li>React</li>
@@ -221,7 +221,7 @@ export const Projects = () => {
                             </div>
                             <div className={`${s.flexBetween} p-4 border-2 border-cold-pink rounded-lg font-bold`}>
                                 <a href="https://basickalculator.netlify.app/" target="_blank" rel="noreferrer">
-                                    <button className={`w-24 h-10 cursor-pointer`}>Go to site</button>
+                                    <button className={`w-10 md:w-24 h-6 md:h-10 cursor-pointer`}>Go to site</button>
                                 </a>
                                 <BsArrowUpRightSquare/>
                             </div>
