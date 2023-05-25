@@ -9,7 +9,7 @@ export const Education = () => {
   return (
     <div>
         <div className={`tail ${s.flexCenter} flex-col text-[10px] md:text-base`}>
-                <div className="head my-8 text-white text-xl md:text-4xl lg:text-6xl font-bold " data-aos="fade-right" data-aos-duration="500">
+                <div className="head my-8 text-white text-xl md:text-6xl font-bold " data-aos="fade-right" data-aos-duration="500">
                     Educational Qualification
                 </div>
                 <div className={`${s.flexCenter} ml-[55px] md:ml-32`}>

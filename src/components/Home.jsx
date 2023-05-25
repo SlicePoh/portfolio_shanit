@@ -6,6 +6,7 @@ import { Skills } from './Skills'
 import { Projects } from './Projects'
 import { Education } from './Education'
 import { Footer } from './Footer';
+import { Experience } from './Experience';
 
 export const Home = () => {
     const [isAnimating,setIsAnimating]=useState(false);
@@ -74,6 +75,7 @@ export const Home = () => {
             <Education/>
             <Skills/>
             <Projects/>
+            <Experience/>
             <Footer/>
         </div>
     )

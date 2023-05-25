@@ -4,6 +4,7 @@ import {FaFacebook,FaInstagram,FaLinkedin,FaGithub,FaHandPointDown} from 'react-
 import {BiDownload} from 'react-icons/bi'
 import cv from '../assets/cv.pdf'
 import emailjs from '@emailjs/browser';
+import email from '../assets/email.png'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -45,13 +46,7 @@ export const Footer = () => {
     };
     return (
         <div className='tail'>
-            <div className={`${s.flexCenter} `} data-aos="zoom-in" data-aos-duration="700">
-                <a href={cv} onClick={notify1} download="Resume" className={`${s.flexCenter} flex w-40 md:w-60 p-2 md:p-4 border-2 text-cold-pink text-base md:text-lg border-cold-pink rounded-lg font-bold`}>
-                    <span>Download CV </span>
-                    <BiDownload className="ml-2 md:ml-4 text-xl md:text-2xl"/>
-                </a>
-            </div>
-            <div className={`head ${s.flexCenter} my-10 md:my-16 text-white text-4xl font-semibold `} data-aos="fade-right" data-aos-duration="700">
+            <div className={`head ${s.flexCenter} my-10 md:my-16 text-white text-xl md:text-4xl font-semibold `} data-aos="fade-right" data-aos-duration="700">
                 My Socials
             </div>
             <div className={`${s.flexCenter} text-xl md:text-3xl text-cold-pink`}>
@@ -68,9 +63,16 @@ export const Footer = () => {
                     <FaGithub/>
                 </a>
             </div>
+            <div className={`${s.flexCenter} `} data-aos="zoom-in" data-aos-duration="1000">
+                <a href={cv} onClick={notify1} download="Resume" className={`${s.flexCenter} my-10 flex w-40 md:w-60 p-2 md:p-4 border-2 text-cold-pink text-base md:text-lg border-cold-pink rounded-lg font-bold`}>
+                    <span>Download CV </span>
+                    <BiDownload className="ml-2 md:ml-4 text-xl md:text-2xl"/>
+                </a>
+            </div>
             <div className={`head ${s.flexCenter} my-8 text-white text-xl md:text-3xl font-semibold `} data-aos="fade-right" data-aos-duration="700">
+                <img src={email} alt="email" className="w-5 md:w-10 mx-1 md:mx-3"/>
                 Write me a message
-                <FaHandPointDown className='mx-2 md:mx-6'/>
+                <FaHandPointDown className='mx-1 md:mx-3'/>
             </div>
             <div className={`${s.flexCenter }`}>
                 <div className={`${s.flexStart} flex-col`}>
@@ -85,6 +87,9 @@ export const Footer = () => {
                         <ToastContainer/>
                     </form> 
                 </div>
+            </div>
+            <div className={`${s.flexCenter} text-center mt-20 mb-5 text-xs md:text-sm text-slate-500`}>
+                copyrights @2023 shanitpaul. All Rights Reserved
             </div>
         </div>
     )

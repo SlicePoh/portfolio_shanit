@@ -12,7 +12,7 @@ export const Skills = () => {
     <div>
       <div className={`tail ${s.flexCenter} text-cold-pink  flex-col my-6`}>
         <div
-          className="head my-8 text-white text-4xl font-semibold "
+          className="head my-8 text-white text-xl md:text-4xl lg:text-6xl font-semibold "
           data-aos="fade-left"
         >
           Skills
