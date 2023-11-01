@@ -1,12 +1,14 @@
 import React,{ useRef } from 'react'
 import s from '../style'
-import {FaFacebook,FaInstagram,FaLinkedin,FaGithub,FaHandPointDown} from 'react-icons/fa'
+import {FaInstagram,FaLinkedin,FaGithub,FaHandPointDown} from 'react-icons/fa'
+import {SiGeeksforgeeks, SiLeetcode, SiPeerlist} from 'react-icons/si'
 import {BiDownload} from 'react-icons/bi'
 import cv from '../assets/cv.pdf'
 import emailjs from '@emailjs/browser';
 import email from '../assets/email.png'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { RiTwitterXFill } from 'react-icons/ri'
 
 
 export const Footer = () => {
@@ -50,22 +52,31 @@ export const Footer = () => {
                 My Socials
             </div>
             <div className={`${s.flexCenter} text-xl md:text-3xl text-cold-pink`}>
-                <a className={`cursor-pointer m-6 md:m-10`} data-aos="fade-down" data-aos-duration="700" href="https://www.facebook.com/shanit.paul.71/" target="_blank" rel="noreferrer">
-                    <FaFacebook/>
-                </a>
-                <a className={`cursor-pointer m-6 md:m-10`} data-aos="fade-down" data-aos-duration="700" href="https://www.linkedin.com/in/shanit-paul-746026205/" target="_blank" rel="noreferrer">
+                <a className={`cursor-pointer m-3 md:m-8`} data-aos="fade-down" data-aos-duration="700" href="https://www.linkedin.com/in/shanitpaul/" target="_blank" rel="noreferrer">
                     <FaLinkedin/>
                 </a>
-                <a className={`cursor-pointer m-6 md:m-10`} data-aos="fade-down" data-aos-duration="700" href="https://www.instagram.com/_s_h_a_n_i_t_/" target="_blank" rel="noreferrer">
+                <a className={`cursor-pointer m-3 md:m-8`} data-aos="fade-down" data-aos-duration="700" href="https://github.com/SlicePoh" target="_blank" rel="noreferrer">
+                    <FaGithub/>
+                </a>
+                <a className={`cursor-pointer m-3 md:m-8`} data-aos="fade-down" data-aos-duration="700" href="https://peerlist.io/shanit" target="_blank" rel="noreferrer">
+                    <SiPeerlist/>
+                </a>
+                <a className={`cursor-pointer m-3 md:m-8`} data-aos="fade-down" data-aos-duration="700" href="https://www.instagram.com/_s_h_a_n_i_t_/" target="_blank" rel="noreferrer">
                     <FaInstagram/>
                 </a>
-                <a className={`cursor-pointer m-6 md:m-10`} data-aos="fade-down" data-aos-duration="700" href="https://github.com/SlicePoh" target="_blank" rel="noreferrer">
-                    <FaGithub/>
+                <a className={`cursor-pointer m-3 md:m-8`} data-aos="fade-down" data-aos-duration="700" href="https://twitter.com/slicepoh" target="_blank" rel="noreferrer">
+                    <RiTwitterXFill/>
+                </a>
+                <a className={`cursor-pointer m-3 md:m-8`} data-aos="fade-down" data-aos-duration="700" href="https://leetcode.com/ShanitPaul/" target="_blank" rel="noreferrer">
+                    <SiLeetcode/>
+                </a>
+                <a className={`cursor-pointer m-3 md:m-8`} data-aos="fade-down" data-aos-duration="700" href="https://auth.geeksforgeeks.org/user/slicepoh/practice" target="_blank" rel="noreferrer">
+                    <SiGeeksforgeeks/>
                 </a>
             </div>
             <div className={`${s.flexCenter} `} data-aos="zoom-in" data-aos-duration="1000">
-                <a href={cv} onClick={notify1} download="Resume" className={`${s.flexCenter} my-10 flex w-40 md:w-60 p-2 md:p-4 border-2 text-cold-pink text-base md:text-lg border-cold-pink rounded-lg font-bold`}>
-                    <span>Download CV </span>
+                <a href={cv} onClick={notify1} download="Shanit's resume" className={`${s.flexCenter} my-10 flex w-40 md:w-60 p-2 md:p-4 border-2 text-cold-pink text-base md:text-lg border-cold-pink rounded-lg font-bold`}>
+                    <span>Get Resume</span>
                     <BiDownload className="ml-2 md:ml-4 text-xl md:text-2xl"/>
                 </a>
             </div>

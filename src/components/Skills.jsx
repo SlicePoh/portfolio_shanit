@@ -4,7 +4,7 @@ import {FaReact, FaBootstrap, FaCss3Alt, FaHtml5, FaJava, FaNodeJs, FaFigma} fro
 import { MdStorage,} from "react-icons/md"
 import {BsGit, BsTools} from "react-icons/bs"
 import {TbBrandReactNative, TbBrandJavascript, TbBrandMongodb, TbSql, TbBrandVscode} from "react-icons/tb"
-import {SiTailwindcss, SiCanva, SiExpress, SiFramer,SiDocker } from "react-icons/si"
+import {SiTailwindcss, SiCanva, SiExpress, SiFramer, SiMiro, SiFirebase } from "react-icons/si"
 import {RiImageEditFill} from "react-icons/ri"
 import { motion } from "framer-motion";
 export const Skills = () => {
@@ -85,6 +85,10 @@ export const Skills = () => {
               <FaNodeJs className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
+              <div>Java</div>
+              <FaJava className="text-lg md:text-xl my-1 md:my-2" />
+            </div>
+            <div className={`${s.flexBetween}`}>
               <div>Mongo DB</div>
               <TbBrandMongodb className="text-lg md:text-xl my-1 md:my-2" />
             </div>
@@ -93,12 +97,12 @@ export const Skills = () => {
               <SiExpress className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
-              <div>SQL</div>
-              <TbSql className="text-lg md:text-xl my-1 md:my-2" />
+              <div>Firebase</div>
+              <SiFirebase className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
-              <div>Java</div>
-              <FaJava className="text-lg md:text-xl my-1 md:my-2" />
+              <div>SQL</div>
+              <TbSql className="text-lg md:text-xl my-1 md:my-2" />
             </div>
           </motion.div>
           <motion.div
@@ -124,8 +128,8 @@ export const Skills = () => {
               <SiCanva className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
-              <div>Docker</div>
-              <SiDocker className="text-lg md:text-xl my-1 md:my-2" />
+              <div>Miro</div>
+              <SiMiro className="text-lg md:text-xl my-1 md:my-2" />
             </div>
             <div className={`${s.flexBetween}`}>
               <div>Framer Motion</div>

@@ -42,7 +42,7 @@ export const Home = () => {
                             stiffness: 400,
                             
                         }}
-                    className={`bg-cold-pink rounded-full border-2 md:border-4 border-hot-pink w-36 z-50 `} src={mypic} alt="no"/>
+                    className={`bg-cold-pink rounded-full border-2 md:border-4 border-hot-pink w-36 h-36 object-cover z-50 `} src={mypic} alt="no"/>
                 </div>
                 <div className={`p-10 ${s.flexCenter} hidden md:block flex-col`} data-aos="zoom-out-left" data-aos-duration="1000" >
                     <motion.img
@@ -59,15 +59,15 @@ export const Home = () => {
                             stiffness: 400,
                             
                         }}
-                    className={`bg-cold-pink rounded-full border-2 md:border-4 border-hot-pink md:w-60 lg:w-80 z-50 `} src={mypic} alt="no"/>
+                    className={`bg-cold-pink rounded-full border-2 md:border-4 border-hot-pink md:w-60 lg:w-80 md:h-60 lg:h-80 object-cover z-50 `} src={mypic} alt="no"/>
                 </div>
                 <div className='tail flex text-3xl md:text-[60px]'>
                     <div className=" font-normal text-white my-[25px]" data-aos="fade-up" data-aos-duration="700" >I'm a</div>
                     <ul data-aos="fade-left" data-aos-duration="700" className={`dynamic-txts`} >
                         <li><span>Student</span></li>
                         <li><span>Developer</span></li>
+                        <li><span>Content Creator</span></li>
                         <li><span>Designer</span></li>
-                        <li><span>Problem Solver</span></li>
                     </ul>
                 </div>
             </div>

@@ -107,7 +107,7 @@ export const Education = () => {
 
                 <div className={`${s.flexCenter} mt-0 md:mt-4 ml-40 md:ml-0` }>
                     <div className={`w-24 md:w-48 h-16 md:h-20 p-1 md:p-4 rounded-xl font-bold bg-cold-pink border-4 border-hot-pink ${s.flexCenter}`} data-aos="flip-down">
-                        9.42-(upto 5th Sem)
+                        9.17-(upto 6th Sem)
                     </div>
                 
                     <div className="w-6 md:w-16 rounded-sm  h-1 mx-1 md:mx-4 mb-4 md:mb-0 bg-cold-pink" data-aos="fade-right"></div>
